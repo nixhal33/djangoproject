@@ -17,10 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from . import views   # while creating you must import it like you create a file called views.py and you must import it in urls.pyon the lower section
+from landing_pages import views as lp_views# while creating you must import it like you create a file called views.py and you must import it in urls.pyon the lower section
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.home_page),
-    path("rand/",views.rand_page)
+    path("",lp_views.home_page),
 ]

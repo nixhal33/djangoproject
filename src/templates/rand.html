@@ -6,7 +6,9 @@
 
 {% block content %}
 <h1> {{ title }} </h1>
-<form>
-    {{form}}
-</form>
+<!-- near this form method i can use csrf_token for blocking the gmail you can check this on the views.py file -->
+<form method="get"> 
+    {{form}} 
+    <button type="submit">Send</button>
+</form> 
 {% endblock %}

@@ -6,6 +6,7 @@
 
 {% block content %}
 <h1>{{ title }}</h1>
-
-{{ form }}
+<form method="post">{% csrf_token %} 
+    {{ form }} <button>Send</button>
+</form>
 {% endblock %}
